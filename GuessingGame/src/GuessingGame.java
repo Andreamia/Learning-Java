@@ -34,7 +34,7 @@ public class GuessingGame extends JFrame {
 		
 		try {
 			int guess = Integer.parseInt(guessText); // parse entered number from text
-
+			
 			//compare entered number with guessed number
 			if (guess < theNumber) {
 				message = guess + " is too low. ";
@@ -75,7 +75,7 @@ public class GuessingGame extends JFrame {
 		} finally {
 			lblOutput.setText(message);
 			txtGuess.requestFocus();
-			txtGuess.selectAll();
+			txtGuess.setText("");
 		}
 	}
 
